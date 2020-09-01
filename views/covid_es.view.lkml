@@ -82,8 +82,36 @@ view: covid_es {
     sql: ${TABLE}.workplaces_percent_change_from_baseline ;;
   }
 
+  measure: average_parks_percent_change_from_baseline {
+    type: average
+    sql:  ${parks_percent_change_from_baseline} ;;
+    value_format_name: decimal_1
+  }
+
+  measure: average_residential_percent_change_from_baseline {
+    type: average
+    sql:  ${residential_percent_change_from_baseline} ;;
+    value_format_name: decimal_1
+  }
+  measure: average_retail_and_recreation_percent_change_from_baseline {
+    type: average
+    sql:  ${retail_and_recreation_percent_change_from_baseline} ;;
+    value_format_name: decimal_1
+  }
+
+  measure: average_transit_stations_percent_change_from_baseline {
+    type: average
+    sql:  ${transit_stations_percent_change_from_baseline} ;;
+    value_format_name: decimal_1
+  }
+
+  measure: average_workplaces_percent_change_from_baseline {
+    type: average
+    sql:  ${workplaces_percent_change_from_baseline} ;;
+    value_format_name: decimal_1
+  }
   measure: count {
     type: count
     drill_fields: []
   }
-}
+  }
