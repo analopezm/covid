@@ -39,8 +39,10 @@ view: covid_es {
 
   dimension: iso_3166_2_code {
     type: string
+    map_layer_name: countries
     sql: ${TABLE}.iso_3166_2_code ;;
   }
+
 
   dimension: metro_area {
     type: string
