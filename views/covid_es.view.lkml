@@ -114,6 +114,6 @@ view: covid_es {
   }
   measure: count {
     type: count
-    drill_fields: []
+    drill_fields: [ ]
   }
   }
